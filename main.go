@@ -57,7 +57,7 @@ func main() {
 		}
 	})
 
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":80", nil))
 }
 
 func getUsers(w http.ResponseWriter, r *http.Request, collection *mongo.Collection) {
